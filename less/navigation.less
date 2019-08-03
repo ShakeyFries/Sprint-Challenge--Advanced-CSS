@@ -2,16 +2,22 @@
 .top-bar{
       width: 100%;
       height: 4rems;
-      background: #f5f5f5;
+      background:@wild-sand;
       .displayFlex(none,center,column);
-      
+
       h1 {
             font-size: 4rem;
-            padding: 1%;
+            padding: 2%;
+            
       }
       nav {
             width: 30%;
             padding: 1%;
             .displayFlex(space-between,none,row);
+            
+            @media @phone {
+                  width: 70%;
+            }
+            
       }
 }
