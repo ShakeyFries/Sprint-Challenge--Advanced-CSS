@@ -1,1 +1,18 @@
 // Mixins Here
+
+.displayFlex(@justify, @align, @direction){
+      display: flex;
+      justify-content: @justify;
+      align-items: @align;
+      flex-direction: @direction;
+}
+
+.button (@bgcolor, @radius){
+      .displayFlex(center,center,row);
+      background: @bgcolor;
+      border-radius: @radius; 
+}
+
+.curve(){
+      border-radius: 5px;
+}
